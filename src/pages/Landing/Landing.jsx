@@ -135,14 +135,7 @@ const Landing = () => {
           </Button>
         </div>
         <div className={`${_["container-style"]} ${Styles.tasks_cont}`}>
-          {taskList?.length === 0 && (
-            <div className={`${_["flex-center-column"]} ${Styles.notask_cont}`}>
-              <div className={Styles.divider}></div>
-              <h2 className={`${_["h2"]}`}>No Tasks</h2>
-              <div className={Styles.divider}></div>
-            </div>
-          )}
-          {taskList?.length > 0 &&
+          {taskList?.length > 0?
             taskList?.map((item, i) => (
               <TaskCard
                 key={i}
@@ -151,7 +144,11 @@ const Landing = () => {
                 setIsEdit={setIsEdit}
                 removeTask={openModalHandler}
               />
-            ))}
+            )):<div className={`${_["flex-center-column"]} ${Styles.notask_cont}`}>
+            <div className={Styles.divider}></div>
+            <h2 className={`${_["h2"]}`}>No Tasks</h2>
+            <div className={Styles.divider}></div>
+          </div>}
         </div>
       </div>
     </>
