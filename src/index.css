@@ -1,13 +1,35 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--font_color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body{
+  min-height: 100vh;
+  width: 100%;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+:root{
+  --primary_color : #1B1A17;
+  --secondary_color: #242320;
+  --brand_color: #FF8303;
+  --brand_color_dull: #A35709;
+  --font_color: #F0E3CA;
+  --placeholder_color: ##F0E3CAA3;
+
+  --border_radius: .5rem;
+}
+
+#root{
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary_color);
 }

@@ -1,0 +1,80 @@
+.main_cont {
+    padding: 3.875rem 0;
+    gap: 9.75rem;
+    max-width: 100rem;
+    margin: auto;
+}
+
+.tasks_cont {
+    padding: 4.375rem 5.625rem;
+    border-radius: var(--border_radius);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.813rem;
+}
+
+.InputField_cont {
+    gap: 0.375rem;
+    width: 86%;
+}
+
+.task_add_wraper {
+    gap: 0.375rem;
+    width: 40%;
+    max-width: 40rem;
+    align-items: flex-start !important;
+}
+
+.notask_cont {
+    height: 20rem;
+    width: 100%;
+    gap: .6rem;
+}
+
+.divider {
+    height: .2rem;
+    width: 4rem;
+    background-color: var(--brand_color);
+    border-radius: 100px;
+}
+
+@media(max-width:1024px) {
+
+    .main_cont{
+        gap: 4.75rem;
+    }
+
+    .tasks_cont {
+        padding: 2rem;
+        gap: 2rem;
+    }
+}
+@media(max-width:900px) {
+
+    .task_add_wraper {
+        width: 67%;
+    }
+}
+
+@media(max-width:600px) {
+
+    .main_cont {
+        padding: 9vw 0;
+        gap: 9vw;
+    }
+
+    .notask_cont {
+        height: 59vh;
+    }
+
+    .task_add_wraper {
+        width: 100%;
+    }
+
+    .tasks_cont {
+        padding: 5vw;
+        gap: 5vw;
+    }
+
+}

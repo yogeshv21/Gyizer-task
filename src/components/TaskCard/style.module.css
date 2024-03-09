@@ -1,0 +1,42 @@
+.card {
+    width: 30%;
+    border-radius: .5rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    width: 50%;
+}
+
+.txt p, .txt h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.btns_container{
+    display: flex;
+    gap: .5rem;
+}
+
+.cross{
+    transform: rotate(45deg);
+}
+
+@media(max-width:900px) { 
+    .card {
+        width: 47%;
+        height: fit-content;
+    }
+}
+@media(max-width:600px) { 
+    .card {
+        width: 100%;
+        height: fit-content;
+    }
+}

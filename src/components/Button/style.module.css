@@ -1,0 +1,20 @@
+.btn{
+    border-radius: .4rem;
+    cursor: pointer;
+    background-color: var(--primary_color);
+}
+
+.btn svg{
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+}
+
+.large{
+    height: 4.375rem;
+    width: 4.375rem;
+}
+.small{
+    height: 2.25rem;
+    width: 2.25rem;
+}

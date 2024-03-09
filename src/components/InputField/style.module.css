@@ -1,0 +1,31 @@
+.inp{
+    padding: 0.438rem 2.375rem;
+}
+
+.inp::placeholder{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--placeholder_color);
+}
+
+.inp{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    resize: none;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+.inp::-webkit-scrollbar{
+    display: none;
+}
+
+.inp_cont{
+    border-radius: .3rem;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}

@@ -1,0 +1,38 @@
+.modal_cont{
+    height: 100vh;
+    width: 100vw;
+    background-color: #070707E3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.modal{
+    width: 17.563rem;
+    background-color: var(--secondary_color);
+    border-top: .3rem solid var(--brand_color);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.cont{
+    gap: 3rem;
+}
+
+.btn_cont{
+    gap:  1rem;
+}
+
+.btn{
+    width: 5rem;
+    padding: .4rem 0;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    .modal{
+        width: 80%;
+    }
+}
